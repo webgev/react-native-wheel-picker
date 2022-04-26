@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View } from "react-native";
-import { Picker } from "@react-native-community/picker";
+import { Picker } from "@react-native-picker/picker";
 
 interface Props {
   data: Array<string>;
@@ -9,7 +9,7 @@ interface Props {
   disabled?: boolean;
 }
 
-const WheelPicker: React.FC<Props> = props => {
+const WheelPicker: React.FC<Props> = (props) => {
   const [selectedItem, setSelectedItem] = useState(props.selectedItem || 0);
   const { data, onItemSelected, disabled } = props;
   if (!data || data.length === 0) return null;
