@@ -4,7 +4,6 @@
   "main": "index.tsx",
   "repository": "github:webgev/react-native-wheel-picker.git",
   "dependencies": {
-    "@react-native-picker/picker": "^2.4.1",
     "moment": "^2.24.0"
   }
 }
